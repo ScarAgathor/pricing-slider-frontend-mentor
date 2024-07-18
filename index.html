@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive pricing component</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<!--Start designing for different browsers-->
+<body>
+
+
+    <header>
+        <p class="header__title">Simple, traffic-based pricing</p>
+        <p class="header__text">Sign-up for our 30-day trial. No credit card required.</p>
+        <img src="images/pattern-circles.svg" alt="" class="header__img">
+    </header>
+
+    <article>
+        <div class="article--flex">
+            <section class="header">
+                <p class="views"><span id="views__value"></span> PAGEVIEWS</p>
+                <p class="pricing"><span id="pricing__value"></span> / month</p>
+            </section>
+            
+            <section class="slider">
+                <input type="range" id="slider__button" step="4" min="8" max="36" value="8">
+            </section>
+    
+            <section class="billing">
+                <p class="billing__type">Monthly Billing</p>
+                <label for="checkbox" class="billing__toggle">
+                    <input type="checkbox" id="checkbox">
+                    <span class="toggle__visual"></span>
+                </label>
+                <p class="billing__type">Yearly Billing</p>
+                <p class="billing__discount">-25% discount</p>
+            </section>
+        </div>
+        
+
+        <section class="line"></section>
+
+        <div class="trial">
+            <ul class="trial__perks">
+                <li class="trial__perk_items"><img src="images/icon-check.svg" alt="">Unlimited websites</li>
+                <li class="trial__perk_items"><img src="images/icon-check.svg" alt="">100% data ownerships</li>
+                <li class="trial__perk_items"><img src="images/icon-check.svg" alt="">Email Reports</li>
+            </ul>
+            <button class="trial__button">Start my trial</button>
+        </div>
+    </article>
+
+</body>
+</html>
